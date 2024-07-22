@@ -1,0 +1,39 @@
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+label{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.error-input{
+    color: red;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    display: none;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: forestgreen;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.button:disabled {
+    cursor: not-allowed;
+    background-color: rgba(34, 139, 34, 0.73);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="formstyles.css">
+    <title>Задание 3</title>
+</head>
+<body>
+<form action="" id="form">
+  <div class="input-group">
+    <label for="name">Имя</label>
+    <input type="text" value="" placeholder="Имя" id="name">
+    <div class="error-input" >Поле не заполнено или заполнено некорректно</div>
+  </div>
+
+  <div class="input-group">
+    <label for="lastname"> Фамилия</label>
+     <input type="text" value="" placeholder="Фамилия" id="lastname">
+    <div class="error-input">Поле не заполнено или заполнено некорректно</div>
+  </div>
+  <div class="input-group">
+    <label for="mail">Email</label>
+    <input type="email" value="" placeholder="Email" id="mail">
+    <div class="error-input">Введен некорректный email</div>
+  </div>
+  <div class="input-group">
+    <label for="pass">Пароль</label>
+    <input type="password" value="" id="pass">
+    <div class="error-input">Пароль должен быть длиннее 8 символов, содержать минимум одну цифру,по одной заглавной и строчной букве и один символ.</div>
+  </div>
+
+  <div class="input-group">
+    <label for="repeatPas">Подтвердить пароль</label>
+    <input type="password" value="" id="repeatPas">
+    <div class="error-input">Пароли не совпадают</div>
+  </div>
+
+  <div class="input-group">
+    <label for="date">Дата рождения</label>
+    <input type="date" value="" id="date">
+    <div class="error-input">Введите Ваше имя</div>
+  </div>
+
+  <button class="button" type="button" id="btn"  disabled onclick="toClick()">Отправить</button>
+</form>
+<script src="formValidation.js"></script>
+</body>
+</html>

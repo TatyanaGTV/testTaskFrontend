@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="pagination.css">
+    <title>Верстка страницы c Bootstrap</title>
+</head>
+<body style="width: 565px; margin: auto">
+        <header class="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img src="images/лого.png" alt="">
+                </div>
+                <div class="burger-menu">
+                    <svg width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+                        <line y1="7" x2="30" y2="7" stroke="black" stroke-width="2"/>
+                        <line y1="13" x2="30" y2="13" stroke="black" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+        </header>
+<div class="border border-warning rounded-4">
+    <div class="d-flex justify-content-center">
+        <div class="stars-image">
+            <img src="images/фотка1.png" alt="">
+        </div>
+        <div class="stars-story-info">
+            <h4><strong>Ивлеева Анастасия</strong></h4>
+            <div class="d-flex g-1">
+                <div class="text-warning-emphasis" >проверено</div>
+                <div >
+                    <img src="images/icon.png" alt="">
+                </div>
+            </div>
+            <p class="fs-6">История о звезде. История о звезде.  История о звезде. История о звезде. История о звезде. История о звезде. История о звезде. История о звезде. История о звезде. История о звезде. История о звезде. История о звезде. </p>
+            <div class="main-story">Всего коллекций: <span > <strong class="text-decoration-underline">10 </strong> </span></div>
+            <div class="main-story">Стоимость: <span > <strong class="text-decoration-underline">500 ₽</strong>  </span> до  <span > <strong class="text-decoration-underline">1000000 ₽ </strong> </span>
+                <div><span><strong  class="decorated">Топовые коллекционеры</strong> </span></div>
+               </div>
+        </div>
+    </div>
+</div>
+        <div class="border border-warning rounded-4">
+            <table class="table-bordered">
+                <thead>
+                <tr class="names">
+                    <th scope="col">Рейтинг</th>
+                    <th scope="col">ID/nickname</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Сумма баллов</th>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="cell-names">
+                    <th scope="row">#1</th>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="td-image">
+                                <img src="images/Ellipse1.png" alt="">
+                            </div>
+                            <div class="fs-6 fw-normal">
+                                @zwezda123...
+                            </div>
+                        </div>
+                    </td>
+                    <td class="fs-6 fw-normal">Варветкина Ангелина</td>
+                    <td class="fw-bold">845</td>
+                    <td>
+                        <button class="btn btn-warning  btn-sm">Подробнее</button>
+                    </td>
+                </tr>
+                <tr class="cell-names">
+                    <th scope="row">#2</th>
+                    <td class="fs-6 fw-normal">Пользователь скрыт</td>
+                    <td class="fs-6 fw-normal">Пользователь скрыт</td>
+                    <td class="fs-6 fw-bold">800</td>
+                    <td></td>
+                </tr>
+                <tr class="cell-names">
+                    <th scope="row">#3</th>
+                    <td>
+                        <div class="td-content">
+                            <div class="td-image">
+                                <img src="images/Ellipse2.png" alt="">
+                            </div>
+                            <div class="fs-6 fw-normal">
+                                1234923452...
+                            </div>
+                        </div>
+                    </td>
+                    <td class="fs-6 fw-normal">Пучкова Анастасия</td>
+                    <td class="fw-bold">787</td>
+                    <td>
+                        <button class="btn btn-warning  btn-sm">Подробнее</button>
+                    </td>
+                </tr>
+                <tr class="cell-names">
+                    <th scope="row">#4</th>
+                    <td class="fs-6 fw-normal">Пользователь скрыт</td>
+                    <td class="fs-6 fw-normal">Пользователь скрыт</td>
+                    <td class="fw-bold">781</td>
+                    <td></td>
+                </tr>
+                <tr class="cell-names">
+                    <th scope="row">#5</th>
+                    <td>
+                        <div class="td-content">
+                            <div class="td-image">
+                                <img src="images/Ellipse3.png" alt="">
+                            </div>
+                            <div class="fs-6 fw-normal">
+                                124к948
+                            </div>
+                        </div>
+                    </td>
+                    <td class="fs-6 fw-normal">Мацуев Илья</td>
+                    <td class="fs-6 fw-bold">743</td>
+                    <td>
+                        <button class="btn btn-warning  btn-sm">Подробнее</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <div class="arrow fs-5">
+                    <svg width="7" height="7" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.580054 2.09956C0.501187 2.00034 0.501187 1.90112 0.580054 1.8019L1.75543 0.328867C1.82666 0.239824 1.90299 0.227103 1.9844 0.290705L2.32022 0.557836C2.38891 0.613806 2.38382 0.690129 2.30495 0.786805L1.36236 1.95073L2.30495 3.11465C2.38382 3.21133 2.38891 3.28765 2.32022 3.34362L1.9844 3.61075C1.90299 3.67436 1.82666 3.66163 1.75543 3.57259L0.580054 2.09956ZM2.11415 2.09956C2.03528 2.00034 2.03528 1.90112 2.11415 1.8019L3.28952 0.328867C3.36075 0.239824 3.43708 0.227103 3.51849 0.290705L3.85431 0.557836C3.923 0.613806 3.91791 0.690129 3.83904 0.786805L2.89646 1.95073L3.83904 3.11465C3.91791 3.21133 3.923 3.28765 3.85431 3.34362L3.51849 3.61075C3.43708 3.67436 3.36075 3.66163 3.28952 3.57259L2.11415 2.09956Z" fill="black"/>
+                    </svg>
+                </div>
+                <div class="number active">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="arrow">
+                    <svg width="7" height="7" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.595319 3.32073C0.526628 3.26476 0.531716 3.18843 0.610583 3.09176L1.55317 1.92783L0.610583 0.763908C0.531716 0.667232 0.526628 0.590909 0.595319 0.534939L0.93114 0.267809C1.01255 0.204206 1.08887 0.216927 1.16011 0.30597L2.33548 1.779C2.41435 1.87822 2.41435 1.97744 2.33548 2.07666L1.16011 3.54969C1.08887 3.63874 1.01255 3.65146 0.93114 3.58786L0.595319 3.32073ZM2.12941 3.32073C2.06072 3.26476 2.06581 3.18843 2.14467 3.09176L3.08726 1.92783L2.14467 0.763908C2.06581 0.667232 2.06072 0.590909 2.12941 0.534939L2.46523 0.267809C2.54664 0.204206 2.62296 0.216927 2.6942 0.30597L3.86957 1.779C3.94844 1.87822 3.94844 1.97744 3.86957 2.07666L2.6942 3.54969C2.62296 3.63874 2.54664 3.65146 2.46523 3.58786L2.12941 3.32073Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    <div class="cards grid text-center" style="row-gap: 0;">
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center justify-content-around">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card g-col-6 mr-2" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+            <div class="card g-col-6" style="width: 18rem;">
+                <img src="images/фотка2.png" alt="">
+                <div class="card-body">
+                    <h4 class="fs-4 fw-bolder text-start"> Без слов</h4>
+                    <div class="d-flex g-2 align-items-center">
+                        <div class="stars-image small">
+                            <img src="images/фотка1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="text-start fs-5"> Настя Ивлеева Вячеславовна</div>
+                            <div class="d-flex g-1 ">
+                                <div class= "text-warning-emphasis">проверено</div>
+                                <div>
+                                    <img src="images/icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2 mb-1">
+                        <div class="fs-6">Редкость:</div>
+                        <div class="fs-6 border border-warning rounded-2">уникальная</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center g-2">
+                        <div class="fs-6">Цена:</div>
+                        <div class="fs-6 text-bg-warning p-1 rounded-2">от 500 ₽</div>
+                    </div>
+                    <button class="btn btn-warning btn-lg fs-6">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="pagination big">
+            <div class="arrow">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.484375 5.13672C0.282552 4.88281 0.282552 4.62891 0.484375 4.375L3.49219 0.605469C3.67448 0.377604 3.86979 0.345052 4.07812 0.507812L4.9375 1.19141C5.11328 1.33464 5.10026 1.52995 4.89844 1.77734L2.48633 4.75586L4.89844 7.73438C5.10026 7.98177 5.11328 8.17708 4.9375 8.32031L4.07812 9.00391C3.86979 9.16667 3.67448 9.13411 3.49219 8.90625L0.484375 5.13672ZM4.41016 5.13672C4.20833 4.88281 4.20833 4.62891 4.41016 4.375L7.41797 0.605469C7.60026 0.377604 7.79557 0.345052 8.00391 0.507812L8.86328 1.19141C9.03906 1.33464 9.02604 1.52995 8.82422 1.77734L6.41211 4.75586L8.82422 7.73438C9.02604 7.98177 9.03906 8.17708 8.86328 8.32031L8.00391 9.00391C7.79557 9.16667 7.60026 9.13411 7.41797 8.90625L4.41016 5.13672Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="number big active big">1</div>
+            <div class="number big">2</div>
+            <div class="number big">3</div>
+            <div class="number big">4</div>
+            <div class="number big">5</div>
+            <div class="arrow">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.523438 8.26172C0.347656 8.11849 0.360677 7.92318 0.5625 7.67578L2.97461 4.69727L0.5625 1.71875C0.360677 1.47135 0.347656 1.27604 0.523438 1.13281L1.38281 0.449219C1.59115 0.286458 1.78646 0.31901 1.96875 0.546875L4.97656 4.31641C5.17839 4.57031 5.17839 4.82422 4.97656 5.07812L1.96875 8.84766C1.78646 9.07552 1.59115 9.10807 1.38281 8.94531L0.523438 8.26172ZM4.44922 8.26172C4.27344 8.11849 4.28646 7.92318 4.48828 7.67578L6.90039 4.69727L4.48828 1.71875C4.28646 1.47135 4.27344 1.27604 4.44922 1.13281L5.30859 0.449219C5.51693 0.286458 5.71224 0.31901 5.89453 0.546875L8.90234 4.31641C9.10417 4.57031 9.10417 4.82422 8.90234 5.07812L5.89453 8.84766C5.71224 9.07552 5.51693 9.10807 5.30859 8.94531L4.44922 8.26172Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+<footer class="d-flex justify-content-between bg-warning p-4">
+    <div>
+        <div >Что такое NFT</div>
+        <div >Создайте NFT с нами</div>
+        <div >О нас</div>
+        <div>Отправить</div>
+        <div >Условия использования</div>
+        <div >Политика конфиденциальности</div>
+    </div>
+    <div>
+        <img src="images/Vector 2 1.png" alt="">
+    </div>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+@font-face {
+    font-family: Rubik;
+    src: url("fonts/Rubik-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: RubikBold;
+    src: url("fonts/Rubik-Bold.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: IstokWeb;
+    src: url("fonts/IstokWeb-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: IstokWebBold;
+    src: url("fonts/IstokWeb-Bold.ttf");
+    font-weight: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Rubik,sans-serif;
+}
+.container {
+    width: 320px;
+    padding: 10px 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.header{
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stars-story{
+    border: 1.32px solid #FDD446FF;
+   /* border-image-source: -moz-linear-gradient(90deg, #FDD446 0%, #F69B47 100%, #F69B47 100%);   градиент не поддерживается*/
+    border-radius: 10px;
+    padding: 7px 6px;
+}
+.stars-story-content{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+.stars-image{
+    width: 66px;
+    height: 90px;
+}
+.stars-story-info h4{
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 8.28px;
+    text-align: left;
+}
+.accepted{
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 8.28px;
+    text-align: left;
+    color: #FF9900;
+    margin-bottom: 2px;
+    display: flex;
+    gap: 2px;
+}
+
+.main-story{
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 9.27px;
+    text-align: left;
+    color: #000000;
+    width: 200px;
+}
+.decorated{
+    text-decoration: underline;
+    color: #000000;
+}
+.names {
+    font-family: Istok Web,sans-serif;
+    font-size: 6px;
+    line-height: 8.64px;
+    text-align: center;
+    vertical-align: center;
+    font-weight: 700;
+
+}
+.names td {
+    padding: 9px 6px;
+
+}
+.cell-num{
+    font-family: RubikBold,sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 10.09px;
+    text-align: center;
+
+}
+.table-contains{
+    border: 0.78px solid #FDD446FF;
+  /*  border-image-source: linear-gradient(90deg, #FDD446 0%, #F69B47 100%, #F69B47 100%); не поддерживается*/
+    border-radius: 10px;
+}
+.table{
+    margin: auto;
+    border-spacing: unset;
+}
+.table td{
+    border-right: 0.2px solid #00000080;
+    border-bottom: 0.2px solid #00000080;
+    border-top:0.2px solid transparent ;
+}
+.table td:last-child{
+    border-right: unset;
+}
+
+.td-content{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.td-text{
+    font-family: Rubik,sans-serif;
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 7px;
+    color: #000000;
+    text-align: center;
+}
+.td-text-hidden{
+    font-family: Rubik,sans-serif;
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 7px;
+    color: #00000099;
+    text-align: center;
+}
+.name{
+    font-family: Istok Web,sans-serif;
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 7px;
+    color: #000000;
+    text-align: center;
+}
+.cell-names td{
+    padding: 6px 4px;
+}
+.button{
+    width: 45px;
+    height: 12px;
+    border-radius: 6px;
+    font-family: Istok Web,sans-serif;
+    font-size: 5px;
+    font-weight: 400;
+    line-height: 7.2px;
+    text-align: center;
+  /*  background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%); не поддерживается*/
+    background: #FDD446FF;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+}
+
+.pagination{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.number{
+    font-family: Istok Web,sans-serif;
+    font-size: 7.03px;
+    font-weight: 700;
+    line-height: 14.85px;
+    text-align: center;
+    color: #000000;
+    margin-right: 14px;
+    position: relative;
+}
+.number:last-child{
+    margin-right: 6px;
+}
+.number:first-child{
+    margin-left: 13px;
+}
+.active{
+    border-radius: 50%;
+    background-color: #FDD446;
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+}
+.active.big{
+    border-radius: 50%;
+    background-color: #FDD446;
+    width: 40px;
+    height: 40px;
+    margin-left: 7px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.card{
+    width: 136px;
+    height: auto;
+    border: 0.44px solid #302F2EB2;
+    padding: 5px 5px 5px 8px;
+    box-sizing: border-box;
+}
+.card:nth-of-type(odd){
+    margin-right: 16px;
+}
+.card h4{
+    font-family: Istok Web,sans-serif;
+    font-size: 8.72px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+
+}
+.card-image{
+    width: 125px;
+    height: 140px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 5px;
+}
+.stars-image.small{
+    width: 30px;
+    height: 30px;
+}
+.stars-image.small img{
+    width: 100%;
+}
+.card-text{
+    font-family: Rubik,sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #000000;
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.unic{
+    border: 0.87px solid #FFC107FF;
+    border-radius: 5px;
+   /* border-image-source: linear-gradient(180deg, #FFC107 0%, #EC851A 100%);*/
+    font-family: Rubik,sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 16.56px;
+    text-align: center;
+    padding: 0 2px;
+    color: #000000;
+}
+.price-block{
+    background: #FDD446;
+    border: 1px solid #FDD446FF;
+    border-radius: 5px;
+    font-family: Rubik,sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 16.56px;
+    text-align: center;
+    color: #000000;
+    padding: 0 2px;
+}
+.button.big-button{
+   /* background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);*/
+    background: #FDD446FF;
+    width: 115px;
+    height: 23px;
+    border-radius: 8px;
+    font-family: Istok Web,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15.69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.number.big{
+    font-family: Istok Web,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+.pagination.big{
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.footer{
+    padding: 30px 18px;
+    display: flex;
+    background: #FDD446;
+    box-sizing: border-box;
+}
+.footer > div{
+    font-family: Rubik,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}

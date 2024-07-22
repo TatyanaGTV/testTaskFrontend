@@ -1,0 +1,21 @@
+table{
+    border-spacing: unset;
+}
+
+.tableCellsNames{
+    font-weight: bold;
+    text-align: center;
+}
+.tableCellsNames td {
+    border-right: 2px solid #acacac;
+}
+.tableCellsNames td:first-child{
+    border-left: 2px solid #acacac;
+}
+.t-body td{
+    border-right: 2px solid #acacac;
+    border-bottom: 2px solid #acacac;
+}
+.t-body td:first-child{
+    border-left: 2px solid #acacac;
+}
